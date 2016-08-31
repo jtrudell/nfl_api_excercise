@@ -1,0 +1,6 @@
+# run once a day at midnight
+schedule_check_arrests_worker:
+  cron: "0 0 * * * "
+  name: "Check NFL Player Arrests - Daily"
+  class: "CheckArrestsWorker"
+
