@@ -1,4 +1,6 @@
 class Player < ApplicationRecord
+  lookup_for :team
+  lookup_for :position
   belongs_to :team
   belongs_to :position
   has_many :player_crimes
